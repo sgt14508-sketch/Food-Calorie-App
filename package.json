@@ -1,0 +1,12 @@
+{
+  "name": "food-calorie-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start-backend": "cd backend && venv\\Scripts\\python app.py",
+    "start-frontend": "cd frontend && npm run dev",
+    "dev": "concurrently -n BACKEND,FRONTEND -c magenta,cyan \"npm run start-backend\" \"npm run start-frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
